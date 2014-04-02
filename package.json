@@ -1,0 +1,35 @@
+{
+  "name": "ng-mixin",
+  "version": "0.0.0",
+  "description": "Mixin utility for Angular that makes it easier to write min-safe code",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bclinkinbeard/ng-mixin.git"
+  },
+  "keywords": [
+    "browser",
+    "browserify",
+    "server",
+    "angular"
+  ],
+  "contributors": [
+    "Ben Clinkinbeard <ben.clinkinbeard@gmail.com> (http://benclinkinbeard.com/)",
+    "Yehor Lvivski <lvivski@gmail.com> (http://lvivski.com/)",
+    "Vladimir Agafonkin <agafonkin@gmail.com> (http://agafonkin.com/en)"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bclinkinbeard/ng-mixin/issues"
+  },
+  "homepage": "https://github.com/bclinkinbeard/ng-mixin",
+  "dependencies": {
+    "underscore": "^1.6.0"
+  },
+  "devDependencies": {
+    "prova": "^1.0.12"
+  }
+}
