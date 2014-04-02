@@ -1,6 +1,6 @@
 {
   "name": "ng-mixin",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Mixin utility for Angular that makes it easier to write min-safe code",
   "main": "index.js",
   "scripts": {
