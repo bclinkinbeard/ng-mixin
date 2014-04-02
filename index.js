@@ -12,19 +12,19 @@ module.exports = function () {
 	function ctor () {
 		var i, len, injectName, key, prop;
 
-		// assign injected dependencies as instance properties
-		if (ctor.$inject) {
-			for (i = 0, len = ctor.$inject.length; i < len; i++) {
-				injectName = ctor.$inject[i];
-				this[injectName] = arguments[i];
-			}
-		}
-
 		// automatically bind methods
 		for (key in this) {
 			prop = this[key];
 			if (typeof prop === 'function') {
 				this[key] = _.bind(prop, this);
+			}
+		}
+
+		// assign injected dependencies as instance properties
+		if (ctor.$inject) {
+			for (i = 0, len = ctor.$inject.length; i < len; i++) {
+				injectName = ctor.$inject[i];
+				this[injectName] = arguments[i];
 			}
 		}
 
